@@ -14,7 +14,7 @@ body {
     overflow-y: scroll;
 }
 
-#banner {
+.header__banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
     font-family: var(--font-family-primmary)
 }
 
-#banner a {
+.header__banner a {
     text-decoration: none;
     color: var(--text-primary--);
 }
@@ -48,7 +48,7 @@ body {
     width: 100%;
 }
 
-#navbar {
+.navbar__container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -62,15 +62,14 @@ body {
     font-family: Copperplate, Papyrus, fantasy;
 }
 
-
-.menu-button {
+.navbar__menu__button {
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
     color: var(--text-primary);
 }
 
-#photo {
+.photo__container {
     background: url("/sadistick%20project/src/test1.jpg");
     background-size: cover;
     width: 100%;
@@ -79,7 +78,7 @@ body {
     top: 0;
 }
 
-#image {
+.photo__image {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     width: 100%;
@@ -99,15 +98,16 @@ footer {
     font-size: 20px;
     font-family: cursive;
 }
-#content
-{
+
+.photo__content {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#information-container {
+
+.photo__information__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -115,37 +115,36 @@ footer {
     justify-content: center;
     width: 80%;
     height: 80%;
-    background: rgba(18,17,17,0.5);
+    background: rgba(18, 17, 17, 0.5);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(9,1,1,0.25);
+    border: 1px solid rgba(9, 1, 1, 0.25);
     border-radius: 100px;
     color: var(--text-primary);
     font-family: var(--font-family-primmary);
     text-align: center;
-    
 }
-#title {
+
+.information__title {
     font-size: 52px;
     font-family: var(--font-family-primmary);
     margin-bottom: 100px;
 }
 
-#opening-hours div {
+.information__opening-hours div {
     font-size: 32px;
-    
 }
-.hours
-{
+
+.opening-hours__hours {
     margin-bottom: 5px;
 }
 
-#location {
+.information__location {
     font-size: 32px;
     font-style: italic;
     margin-top: 100px;
 }
-#PhoneNumber
-{
+
+.information__PhoneNumber {
     font-size: 32px;
     font-style: italic;
     margin-top: 100px;

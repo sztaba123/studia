@@ -4,7 +4,7 @@
     --text-secondary: white;
     --hr-primary: rgb(64, 64, 64);
     --hr-secondary: rgb(38, 38, 38);
-    --font-family-primmary: Copperplate, Papyrus;
+    --font-family-primary: Copperplate, Papyrus;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     overflow-y: scroll;
 }
 
-#banner {
+.header__banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,12 @@ body {
     background-color: var(--background-primary);
     color: var(--text-primary);
     font-size: 32px;
-    font-family: var(--font-family-primmary)
+    font-family: var(--font-family-primary);
 }
 
-#banner a {
+.header__banner a {
     text-decoration: none;
-    color: var(--text-primary--);
+    color: var(--text-primary);
 }
 
 .line {
@@ -38,17 +38,17 @@ body {
     margin: auto;
 }
 
-.line-primary {
+.line--primary {
     border-bottom: 1px solid var(--hr-primary);
     margin-left: 5%;
 }
 
-.line-secondary {
+.line--secondary {
     border-bottom: 1px solid var(--hr-secondary);
     width: 100%;
 }
 
-#navbar {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -62,15 +62,14 @@ body {
     font-family: Copperplate, Papyrus, fantasy;
 }
 
-
-.menu-button {
+.navbar__link {
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
     color: var(--text-primary);
 }
 
-#photo {
+.photo_contrainer {
     background: url("/sadistick%20project/src/test1.jpg");
     background-size: cover;
     width: 100%;
@@ -79,7 +78,7 @@ body {
     top: 0;
 }
 
-#image {
+.photo__image {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     width: 100%;
