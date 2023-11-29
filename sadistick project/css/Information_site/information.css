@@ -123,6 +123,10 @@ footer {
     color: var(--text-primary);
     font-family: var(--font-family-primmary);
     text-align: center;
+    transition: 0.3s;
+}
+.photo__information__container:hover{
+    border: 5px solid rgba(0, 0, 0);
 }
 
 .information__title {
