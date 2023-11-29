@@ -5,43 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magiczne Muzeum Motoryzacyjnych Marzeń</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Museum_site/museum.css">
 </head>
 
 <body>
 
     <header>
-        <div id="banner"><a href="main.html">Magiczne Muzeum Motoryzacyjnych Marzeń</a></div>
+        <div class="header__banner"><a href="main.html" class="header__banner-link">Magiczne Muzeum Motoryzacyjnych Marzeń</a></div>
     </header>
-    <div class="line line-primary"></div>
-    <nav id="navbar">
-        <div class="undersites"><a href="information.html" class="menu-button">Informacje</a></div>
-        <div class="undersites"><a href="museum.html" class="menu-button">Wirtualne Muzeum</a></div>
-        <div class="undersites"><a href="blog.html" class="menu-button">Blog</a></div>
+    <div class="line line--primary"></div>
+    <nav class="navbar">
+        <div class="navbar__item"><a href="information.html" class="navbar__link">Informacje</a></div>
+        <div class="navbar__item"><a href="museum.html" class="navbar__link">Wirtualne Muzeum</a></div>
+        <div class="navbar__item"><a href="blog.html" class="navbar__link">Blog</a></div>
     </nav>
-    <div class="line line-secondary --sticky-top"></div>
+    <div class="line line--secondary line--sticky-top"></div>
     <section>
-        <div id="photo">
-            <div id="left">
-                <div id="image">
-                    <div id="content">
-                        <div id="grid-container">
+        <div class="photo_contrainer">
+            <div class="photo__left">
+                <div class="photo__image">
+                    <div class="photo__content">
+                        <div class="photo__grid-container">
                         </div>
-                        <div id="toggle">
-                            <div id="dot"></div>
-                            <div id="openText">W tej chwili otwarte</div>
+                        <div class="photo__toggle">
+                            <div class="photo__dot"></div>
+                            <div class="photo__openText">W tej chwili otwarte</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="right">
+        <div class="photo__right">
 
         </div>
     </section>
-    <div class="line line-secondary"></div>
+    <div class="line line--secondary"></div>
     <footer>
-        tu będzie logo i dane kontaktowe
+        <div class="footer__logos">
+            <div class="logos__div"><img class="footer__logos__img" src="src/facebook.png" alt="facebook logo"></div>
+            <div class="logos__div"><img class="footer__logos__img" src="src/instagram.png" alt="instagram logo"></div>
+            <div class="logos__div"><img class="footer__logos__img" src="src/twitter.png" alt="twitter logo"></div>
+        </div>
+        <div class="footter__links">
+            <div class="footter__links__div">Info</div>
+            <div class="footter__links__div">Support</div>
+            <div class="footter__links__div">Terms of use</div>
+            <div class="footter__links__div">Privicy Police</div>
+        </div>
     </footer>
 </body>
 
