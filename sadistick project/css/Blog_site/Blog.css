@@ -99,10 +99,6 @@ footer {
     font-size: 20px;
     font-family: cursive;
 }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 .footers__logo{
     margin: 20px;
     margin-top: 0px;
@@ -124,10 +120,6 @@ footer {
 }
 .footer__logos__img:hover{
     transform: scale(1.2) rotate(360deg);
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
 }
 .footers__links{
     margin: 10px;
@@ -142,8 +134,4 @@ footer {
 }
 .footter__links__div:hover{
     transform: scale(1.1);
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
