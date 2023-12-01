@@ -1,7 +1,7 @@
 :root {
     --background-primary: black;
-    --text-primary: lightgray;
-    --text-secondary: white;
+    --text-primary: white;
+    --text-secondary: gray;
     --hr-primary: rgb(64, 64, 64);
     --hr-secondary: rgb(38, 38, 38);
     --font-family-primmary: Copperplate, Papyrus;
@@ -48,27 +48,6 @@ body {
     width: 100%;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-    width: 100%;
-    height: 75px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    font-family: Copperplate, Papyrus, fantasy;
-}
-
-
-.menu-button {
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-    color: var(--text-primary);
-}
 
 #photo {
     background: url("/sadistick%20project/src/test1.jpg");
@@ -86,16 +65,4 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-    font-size: 20px;
-    font-family: cursive;
 }

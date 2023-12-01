@@ -1,104 +1,3 @@
-:root {
-    --background-primary: black;
-    --text-primary: lightgray;
-    --text-secondary: white;
-    --hr-primary: rgb(64, 64, 64);
-    --hr-secondary: rgb(38, 38, 38);
-    --font-family-primmary: Copperplate, Papyrus;
-}
-
-body {
-    background-color: var(--background-primary);
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-}
-
-#banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-    font-size: 32px;
-    font-family: var(--font-family-primmary)
-}
-
-#banner a {
-    text-decoration: none;
-    color: var(--text-primary--);
-}
-
-.line {
-    height: 1px;
-    width: 90%;
-    box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 1);
-    margin: auto;
-}
-
-.line-primary {
-    border-bottom: 1px solid var(--hr-primary);
-    margin-left: 5%;
-}
-
-.line-secondary {
-    border-bottom: 1px solid var(--hr-secondary);
-    width: 100%;
-}
-
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-    width: 100%;
-    height: 75px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    font-family: Copperplate, Papyrus, fantasy;
-}
-
-
-.menu-button {
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-    color: var(--text-primary);
-}
-
-#photo {
-    background: url("/sadistick%20project/src/test1.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    top: 0;
-}
-
-#image {
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-    font-size: 20px;
-    font-family: cursive;
-}
 #content
 {
     width: 100%;
@@ -115,13 +14,16 @@ footer {
     justify-content: center;
     width: 80%;
     height: 80%;
-    background: rgba(18,17,17,0.5);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(9,1,1,0.25);
-    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+
+    /* font */
     color: var(--text-primary);
     font-family: var(--font-family-primmary);
     text-align: center;
+    font-weight: bold;
+    font-size: 24px;
     
 }
 #title {
@@ -130,23 +32,7 @@ footer {
     margin-bottom: 100px;
 }
 
-#opening-hours div {
-    font-size: 32px;
-    
-}
 .hours
 {
     margin-bottom: 5px;
-}
-
-#location {
-    font-size: 32px;
-    font-style: italic;
-    margin-top: 100px;
-}
-#PhoneNumber
-{
-    font-size: 32px;
-    font-style: italic;
-    margin-top: 100px;
 }
