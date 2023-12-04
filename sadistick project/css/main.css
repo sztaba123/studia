@@ -4,7 +4,7 @@
     --text-secondary: gray;
     --hr-primary: rgb(64, 64, 64);
     --hr-secondary: rgb(38, 38, 38);
-    --font-family-primmary: Copperplate, Papyrus;
+    --font-family-primmary: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: scroll;
+    font-family: var(--font-family-primmary);
 }
 
 #banner {
