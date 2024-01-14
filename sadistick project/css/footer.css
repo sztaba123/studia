@@ -6,6 +6,11 @@ footer {
     width: 100%;
     background-color: var(--background-primary);
     font-size: 18px;
+    bottom: 0;
+    z-index: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
 }
 
 .footer__container {
@@ -22,7 +27,6 @@ footer {
 
 .--down {
     height: 20px;
-
 }
 
 .--footer-list-up {
@@ -44,13 +48,11 @@ footer {
     transform: scale(1.25);
 }
 
-
 .authors {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: space-between;
     margin-left: auto;
     color: var(--text-secondary);
     font-size: 14px;

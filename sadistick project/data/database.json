@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Ferrari 250 GTO",
+    "year": 1962,
+    "type": "sport",
+    "engine": "3.0L V12 SOHC",
+    "horsePower": "300km@7500rpm",
+    "to100": "6.1s",
+    "vMax": "280km/h",
+    "description": "<p>Ferrari 250 GTO, wyjątkowy sportowy model z lat 60., to ikona marki z niewielkiej serii produkowanej w latach 1962–1964. Zaledwie 33-36 egzemplarzy tego rzadkiego pojazdu, napędzanego potężnym 12-cylindrowym silnikiem o ponad 300 KM, uczyniły go najdroższym Ferrari, osiągającym wartość 9 500 000 €.</p><p>Pierwsza generacja wyróżniała się trzema charakterystycznymi wlotami powietrza na masce, a zmiany w 1964 roku objęły nową maskę i trzy wloty boczne. Modyfikacje te wprowadziły świeżość do stylu, a jeden egzemplarz nawet zrezygnował z wlotów na masce. Rury wydechowe umieszczono po bokach na wysokości drzwi, co dodatkowo podkreśliło innowacyjność modelu.</p><p>Ferrari 250 GTO, oprócz potężnego silnika, zyskało uznanie dzięki nowatorskiej aerodynamicznej karoserii. Jego unikalny design, połączony z niewielką liczbą wyprodukowanych egzemplarzy, uczynił go nie tylko ikoną marki, ale także jednym z najbardziej cenionych samochodów sportowych w historii.</p>",
+    "img": "src/cars/ferrari-250-gto.jpg"
+  },
+  {
+    "name": "Porsche 911",
+    "year": 1963,
+    "type": "sport",
+    "engine": "2.0L B6",
+    "horsePower": "130hp",
+    "to100": "nieznane",
+    "vMax": "nieznane",
+    "description": "<p>Porsche 911, pierwsza generacja tego kultowego sportowego modelu, została po raz pierwszy zaprezentowana publicznie w 1963 roku. Stanowiła większego, mocniejszego i bardziej komfortowego następcę modelu 356.</p><p>Pierwsze egzemplarze trafiły na rynek północnoamerykański w lutym 1965 roku, z ceną wynoszącą 6500 $. Model ten był wyposażony w chłodzony powietrzem silnik B6 o pojemności 1991 cm³ generujący moc 130 KM (96 kW).</p><p>W kolejnych latach wprowadzono różne warianty, takie jak 911S, 911T, czy 911E, z różnymi poziomami mocy i modyfikacjami. W 1974 roku zastosowano silnik o pojemności 2687 cm³ z modelu Carrera RS 2.7, a w 1977 roku pojawiło się 911 SC (Super Carrera) z silnikiem o pojemności 3,0 l i mocy 180 KM.</p><p>Pierwsza generacja Porsche 911 to ikona motoryzacji, która legitymuje się nie tylko wyjątkowym designem, ale także osiągami i historią.</p>",
+    "img": "src/cars/porsche-911.jpg"
+  },
+  {
+    "name": "Jaguar E-type",
+    "year": -14,
+    "type": "sport",
+    "engine": "R6 4.2L, DOHC",
+    "horsePower": "269@5400rpm",
+    "to100": "7.0s",
+    "vMax": "246 km/h",
+    "description": "<p>Jaguar E-type – model sportowego samochodu marki Jaguar, produkowany w latach 1961-1975. Samochód zajął pierwsze miejsce w rankingu The Daily Telegraph stu najpiękniejszych samochodów wszech czasów.</p><p>Samochód napędzał skonstruowany w 1948 roku silnik typu XK, wykorzystywany we wcześniejszych modelach firmy. Silnik ten był produkowany przez 44 lata z niewielkimi tylko zmianami konstrukcyjnymi.</p><p>Na desce rozdzielczej wyłożonej polakierowaną blachą aluminiową symetrycznie rozmieszczono zestaw hebelkowych przełączników i wskaźników do roku 1967. Koło sportowej kierownicy było wykonane z drewna do roku 1970, później zastosowano kierownicę bez drewna (V12).</p>",
+    "img": "src/cars/jaguar-e-type.jpg"
+  },
+  {
+    "name": "Ford Mustang Shelby Europa",
+    "year": 1971,
+    "type": "muscle",
+    "engine": "5.75L V8",
+    "horsePower": "270hp",
+    "to100": "nieznane",
+    "vMax": "nieznane",
+    "description": "<p>Ford Mustang Shelby Europa, wprowadzony w 1971 roku, to wyjątkowa wersja tego kultowego samochodu sportowego. Stworzony przez Caroll'a Shelby'ego, legendarnego konstruktora i kierowcę wyścigowego, ten model był dostosowany do europejskich standardów i preferencji motoryzacyjnych.</p><p>Mustang Shelby Europa był wyposażony w potężny silnik V8 o pojemności 5.75 litra, generujący imponującą moc 270 koni mechanicznych. To połączenie siły, stylu i osiągów uczyniło Mustanga Shelby Europę unikalnym pojazdem na rynku europejskim.</p><p>Z charakterystycznym logo Shelby'ego i wyjątkowym wzornictwem nadwozia, Mustang Shelby Europa stał się symbolem luksusu i sportowego stylu na drogach kontynentu.</p>",
+    "img": "src/cars/shelby-europa-mustang.jpg"
+  },
+  {
+    "name": "Dodge Charger II",
+    "year": 1968,
+    "type": "muscle",
+    "engine": "V8 6.0L",
+    "horsePower": "294-335hp",
+    "to100": "nieznane",
+    "vMax": "nieznane",
+    "description": "<p>Dodge Charger II został po raz pierwszy przedstawiony światu w 1968 roku, stanowiąc rewolucję w rodzinie modeli opartych na płycie podłogowej Chrysler B-body. Przeprojektowane nadwozie zyskało charakterystyczną stylistykę coke bottle, a gruntownie zmienione wnętrze pojazdu zapewniło jeszcze lepszy komfort podróżowania.</p><p>Pod maską tego potężnego muscle cara znajdowały się różne jednostki napędowe, zaczynając od V8 318 o mocy 233 KM, poprzez 383 z gaźnikiem 2-gardzielowym (294 KM) lub 4-gardzielowym (335 KM), aż do potężnych wersji 426 HEMI i 440. Dodano również opcję silnika V6 3.7 o mocy 147 KM.</p><p>W 1969 roku wprowadzono niewielkie zmiany w stylistyce, a rok później do gamy dodano wersję Charger 500 o ulepszonej aerodynamice nadwozia.</p><p>Dodge Charger II to ikona lat 60., reprezentująca potęgę i styl amerykańskich muscle carów tamtej epoki.</p>",
+    "img": "src/cars/dodge-charger-II.jpg"
+  },
+  {
+    "name": "Lamborghini Miura",
+    "year": 1966,
+    "type": "sport",
+    "engine": "3.9L V12 DOHC",
+    "horsePower": "350hp@7000rpm",
+    "to100": "6.7s",
+    "vMax": "288km/h",
+    "description": "<p>Lamborghini Miura, wprowadzone na rynek w 1966 roku, to średni silnikowy samochód sportowy, który stał się symbolem umiejętności włoskiego producenta. Dzięki oszałamiającemu designowi i powerful 12-cylinder engine, the Miura was a pioneer in the supercar world.</p>",
+    "img": "src/cars/lamborghini-miura.jpg"
+  },
+  {
+    "name": "Ferrari F40",
+    "year": 1987,
+    "type": "sport",
+    "engine": "2.9L Twin-Turbo V8",
+    "horsePower": "471hp@7000rpm",
+    "to100": "4.1s",
+    "vMax": "324km/h",
+    "description": "<p>Ferrari F40, zaprezentowane w 1987 roku, to jedno z najbardziej kultowych dzieł włoskiego producenta. Zasilane potężnym podwójnie doładowanym silnikiem V8 o mocy 471 KM, F40 było nie tylko najszybszym samochodem Ferrari w tamtym czasie, ale również pierwszym, które przekroczyło prędkość 322 km/h.</p><p>Jego lekka karoseria z włókna węglowego, oszałamiający design i osiągi uczyniły go marzeniem każdego miłośnika supersamochodów. Ferrari F40 stało się ikoną lat 80., reprezentując doskonałość inżynieryjną i pełną pasję koncepcję samochodu sportowego.</p>",
+    "img": "src/cars/ferrari-f40.jpg"
+  },
+  {
+    "name": "Porsche 959",
+    "year": 1986,
+    "type": "sport",
+    "engine": "2.8L Twin-Turbo Flat-6",
+    "horsePower": "444hp@6500rpm",
+    "to100": "3.7s",
+    "vMax": "317km/h",
+    "description": "<p>Porsche 959, wprowadzone w 1986 roku, to jeden z najbardziej zaawansowanych technologicznie supersamochodów swojej ery. Wyposażony w turbodoładowany silnik Flat-6, 959 osiągało imponującą moc 444 KM. Jego innowacyjne rozwiązania, takie jak awangardowy system napędu na wszystkie koła, uczyniły go pionierem w dziedzinie technologii samochodowej.</p>",
+    "img": "src/cars/porsche-959.jpg"
+  },
+  {
+    "name": "Bugatti EB110",
+    "year": 1991,
+    "type": "supersamochód",
+    "engine": "3.5L Quad-Turbo V12",
+    "horsePower": "550hp@8000rpm",
+    "to100": "3.4s",
+    "vMax": "351km/h",
+    "description": "<p>Bugatti EB110, zadebiutowane w 1991 roku, to jeden z najbardziej ekskluzywnych supersamochodów swojej epoki. Zasilane potężnym podwójnie doładowanym silnikiem V12, EB110 osiągało niesamowitą moc 550 KM. Jego futurystyczny design i osiągi czyniły go jednym z najbardziej pożądanych samochodów lat 90.</p>",
+    "img": "src/cars/bugatti-eb110.jpg"
+  },
+  {
+    "name": "McLaren F1",
+    "year": 1992,
+    "type": "supersamochód",
+    "engine": "6.1L V12",
+    "horsePower": "627hp@7400rpm",
+    "to100": "3.2s",
+    "vMax": "386km/h",
+    "description": "<p>McLaren F1, zaprojektowane w 1992 roku, to legendarne auto z trzema miejscami siedzącymi, z centralnie umieszczonym miejscem kierowcy. Zasilane potężnym silnikiem V12 o mocy 627 KM, F1 było jednym z najszybszych samochodów na świecie, osiągając prędkość maksymalną 386 km/h.</p><p>Jego lekka konstrukcja z włókna węglowego i innowacyjne rozwiązania, takie jak otwierane skrzydła skrzyni biegów, uczyniły go ikoną inżynieryjną. McLaren F1 do dziś pozostaje jednym z najbardziej cenionych i pożądanych supersamochodów.</p>",
+    "img": "src/cars/mclaren-f1.jpg"
+  },
+  {
+    "name": "Jaguar XJ220",
+    "year": 1992,
+    "type": "sport",
+    "engine": "3.5L Twin-Turbo V6",
+    "horsePower": "542hp@7000rpm",
+    "to100": "3.6s",
+    "vMax": "349km/h",
+    "description": "<p>Jaguar XJ220, zaprezentowane w 1992 roku, to brytyjski supersamochód, który był przez krótki czas najszybszym samochodem na świecie. Zasilane podwójnie doładowanym silnikiem V6, XJ220 osiągało imponującą moc 542 KM. Jego futurystyczny design i osiągi sprawiły, że stał się legendą w świecie supersamochodów.</p>",
+    "img": "src/cars/jaguar-xj220.jpg"
+  },
+  {
+    "name": "Dodge Viper RT/10",
+    "year": 1992,
+    "type": "muscle",
+    "engine": "8.0L V10",
+    "horsePower": "400hp@4600rpm",
+    "to100": "4.2s",
+    "vMax": "306km/h",
+    "description": "<p>Dodge Viper RT/10, wprowadzone na rynek w 1992 roku, to amerykański supersamochód znany ze swojego potężnego silnika V10. Osiągający moc 400 KM, Viper RT/10 był symbolem siły i surowego designu. Jego brak dachu i bezkompromisowa charakterystyka uczyniły go ulubieńcem miłośników szybkich samochodów na całym świecie.</p>",
+    "img": "src/cars/dodge-viper-rt10.jpg"
+  },
+  {
+    "name": "Aston Martin Vantage V600",
+    "year": 1998,
+    "type": "sport",
+    "engine": "5.3L Twin-Supercharged V8",
+    "horsePower": "600hp@6000rpm",
+    "to100": "3.9s",
+    "vMax": "322km/h",
+    "description": "<p>Aston Martin Vantage V600, zbudowane w 1998 roku, to luksusowy brytyjski supersamochód o potężnym silniku V8. Zasilane podwójnie sprężonym silnikiem o mocy 600 KM, Vantage V600 było jednym z najszybszych samochodów tamtej dekady. Jego elegancki design i wyrafinowane wnętrze sprawiły, że stał się ikoną prestiżu i szybkości.</p>",
+    "img": "src/cars/aston-martin-vantage-v600.jpg"
+  },
+  {
+    "name": "Nissan Skyline GT-R R34",
+    "year": 1999,
+    "type": "sport",
+    "engine": "2.6L Twin-Turbo Inline-6",
+    "horsePower": "276hp@6800rpm",
+    "to100": "4.9s",
+    "vMax": "250km/h",
+    "description": "<p>Nissan Skyline GT-R R34, wprowadzone na rynek w 1999 roku, to japońska legenda w świecie samochodów sportowych. Wyposażone w turbodoładowany silnik R6, GT-R R34 osiągało moc 276 KM. Jego fenomenalne osiągi i wszechstronność sprawiły, że stało się jednym z najbardziej uwielbianych samochodów przez entuzjastów motoryzacji.</p>",
+    "img": "src/cars/nissan-skyline-gtr-r34.jpg"
+  },
+  {
+    "name": "Ferrari Testarossa",
+    "year": 1984,
+    "type": "supersamochód",
+    "engine": "4.9L Flat-12",
+    "horsePower": "390hp@6300rpm",
+    "to100": "5.3s",
+    "vMax": "290km/h",
+    "description": "<p>Ferrari Testarossa, wprowadzone w 1984 roku, to włoski supersamochód o wyjątkowym designie i potężnym silniku Flat-12. Zasilane mocą 390 KM, Testarossa charakteryzowało się charakterystycznymi otworami wentylacyjnymi na bokach. Jego elegancja i osiągi uczyniły go jednym z ikonicznych modeli lat 80.</p>",
+    "img": "src/cars/ferrari-testarossa.jpg"
+  },
+  {
+    "name": "BMW M3 E30",
+    "year": 1986,
+    "type": "sport",
+    "engine": "2.3L Inline-4",
+    "horsePower": "195hp@6750rpm",
+    "to100": "6.7s",
+    "vMax": "235km/h",
+    "description": "<p>BMW M3 E30, wprowadzone w 1986 roku, to niemiecki sportowy model, który stał się legendą na torze wyścigowym. Zasilane silnikiem Inline-4 o mocy 195 KM, M3 E30 było doskonałym połączeniem wydajności drogowej i zdolności do ścigania się. Jego sukcesy w motorsporcie uczyniły go kultowym modelem marki BMW.</p>",
+    "img": "src/cars/bmw-m3-e30.jpg"
+  },
+  {
+    "name": "Mazda RX-7",
+    "year": 1998,
+    "type": "sport",
+    "engine": "1.3L Twin-Turbo Rotary",
+    "horsePower": "276hp@6500rpm",
+    "to100": "5.3s",
+    "vMax": "250km/h",
+    "description": "<p>Mazda RX-7, wyprodukowane w 1998 roku, to japońska ikona samochodów sportowych. Z unikalnym silnikiem Wankla o dwóch turbo, RX-7 oferuje dynamiczną jazdę i charakterystyczny design, który przyciąga uwagę miłośników motoryzacji.</p>",
+    "img": "src/cars/mazda-rx7.jpg"
+  },
+  {
+    "name": "Nissan 300ZX",
+    "year": 1996,
+    "type": "sport",
+    "engine": "3.0L Twin-Turbo V6",
+    "horsePower": "300hp@6400rpm",
+    "to100": "5.6s",
+    "vMax": "250km/h",
+    "description": "<p>Nissan 300ZX, wyprodukowane w 1996 roku, to japoński samochód sportowy z potężnym silnikiem V6 i podwójnym turbo. Z doskonałym prowadzeniem i stylowym nadwoziem, 300ZX wciąż zachwyca swoim designem i osiągami.</p>",
+    "img": "src/cars/nissan-300zx.jpg"
+  },
+  {
+    "name": "Chevrolet Camaro Z/28",
+    "year": 2000,
+    "type": "muscle",
+    "engine": "5.7L LS1 V8",
+    "horsePower": "305hp@5200rpm",
+    "to100": "5.3s",
+    "vMax": "250km/h",
+    "description": "<p>Chevrolet Camaro Z/28, wyprodukowane w 2000 roku, to amerykański muscle car z kultowym silnikiem LS1 V8. Z charakterystycznym designem i potężnym brzmieniem, Camaro Z/28 wciąż jest symbolem siły i stylu.</p>",
+    "img": "src/cars/chevrolet-camaro-z28.jpg"
+  },
+  {
+    "name": "Ford Mustang SVT Cobra R",
+    "year": 2000,
+    "type": "muscle",
+    "engine": "5.4L DOHC V8",
+    "horsePower": "385hp@5250rpm",
+    "to100": "4.7s",
+    "vMax": "249km/h",
+    "description": "<p>Ford Mustang SVT Cobra R, wyprodukowane w 2000 roku, to limitowana edycja klasycznego muscle cara. Z potężnym silnikiem V8 i sportowym zawieszeniem, Mustang SVT Cobra R oferuje doskonałe osiągi na torze wyścigowym.</p>",
+    "img": "src/cars/ford-mustang-svt-cobra-r.jpg"
+  },
+  {
+    "name": "Mitsubishi 3000GT VR-4",
+    "year": 1999,
+    "type": "sport",
+    "engine": "3.0L Twin-Turbo V6",
+    "horsePower": "320hp@6000rpm",
+    "to100": "5.4s",
+    "vMax": "250km/h",
+    "description": "<p>Mitsubishi 3000GT VR-4, wyprodukowane w 1999 roku, to japoński samochód sportowy z podwójnym turbo. Z zaawansowanym systemem napędu na wszystkie koła i innowacyjnym designem, 3000GT VR-4 było prekursorem dla wielu nowoczesnych technologii w samochodach sportowych.</p>",
+    "img": "src/cars/mitsubishi-3000gt-vr4.jpg"
+  }
+]

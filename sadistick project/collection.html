@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/collection.css">
     <link rel="stylesheet" href="css/assets.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -37,19 +42,53 @@
     <section>
         <div id="photo">
             <div id="image">
-                <div id="content">
-                    <div id="grid-container">
+                <div class="content">
+                    <div class="filter-panel">
+                        <span>
+                            <h2 class="filter-panel__title">Filtruj</h2>
+                        </span>
+                        <div class="filter-panel__containter">
+                            <div>
+                                <label for="year" class="filter-panel__label">Rok:</label>
+                                <select id="year" class="filter-panel__select"></select>
+                            </div>
+                            <div>
+                                <label class="filter-panel__label">Typ samochodu:</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-group__group">
+                                        <input type="checkbox" id="sport" name="type" value="sport"
+                                            class="checkbox-group__input">
+                                        <label for="sport" class="checkbox-group__label">Sportowy</label>
+                                    </div>
+
+                                    <div class="checkbox-group__group">
+                                        <input type="checkbox" id="super" name="type" value="supersamochód"
+                                            class="checkbox-group__input">
+                                        <label for="super" class="checkbox-group__label">Supersamochód</label>
+                                    </div>
+                                    <div class="checkbox-group__group">
+                                        <input type="checkbox" id="muscle" name="type" value="muscle"
+                                            class="checkbox-group__input">
+                                        <label for="muscle" class="checkbox-group__label">Muscle</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter-panel__button">Filtruj</button>
+                        </div>
                     </div>
-                    <div id="toggle">
-                        <div id="dot"></div>
-                        <div id="openText">W tej chwili otwarte</div>
+                    <div id="posts-container" class="posts-container">
                     </div>
+
+                    <div id="overlay"></div>
+
+                    <div id="popup">
+                        <div id="popup-content">
+                            <span id="close-popup">X</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div id="right">
-
-        </div>
     </section>
     <div class="line line-secondary"></div>
     <footer>
@@ -68,7 +107,7 @@
 
             <ul class="link__list --footer-list-down">
                 <li class="link__list__item">
-                    <a href="regulamin.html" class="link__list__href" disabled>Regulamin</a>
+                    <a href="regulamin.html" class="link__list__href">Regulamin</a>
                     <span class="link__list__href__underline"></span>
                 </li>
                 <li class="link__list__item">
