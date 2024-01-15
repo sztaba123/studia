@@ -51,7 +51,7 @@ body {
 
 
 #photo {
-    background: url("/sadistick%20project/src/test1.jpg");
+    background: url("../src/test1.jpg");
     background-size: cover;
     width: 100%;
     height: 100vh;

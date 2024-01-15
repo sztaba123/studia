@@ -44,6 +44,7 @@ function populateYearSelect() {
     const yearSelect = document.getElementById("year");
     let option = document.createElement("option");
 
+
     option.value = "1945-1949";
     option.innerHTML = "1945 - 1950";
     yearSelect.appendChild(option);
@@ -56,6 +57,10 @@ function populateYearSelect() {
         option.innerHTML = `${startYear} - ${endYear}`;
         yearSelect.appendChild(option);
     }
+
+    option.value = "all";
+    option.innerHTML = "Wszystkie lata";
+    yearSelect.appendChild(option);
 }
 
 //filtrowanie postów - przyjmuje zakres lat, tablicę z typami i tablicę z danymi
@@ -63,11 +68,11 @@ function filterPosts(selectedYear, selectedTypes, data) {
     const filteredPosts = data.filter(post => {
         const postYear = parseInt(post.year);
         const yearRange = selectedYear.split("-").map(Number);
-        const isYearInRange = postYear >= yearRange[0] && postYear <= yearRange[1];
+        const isYearMatch = selectedYear === "all" || (postYear >= yearRange[0] && postYear <= yearRange[1]);
 
         const isTypeMatch = selectedTypes.length === 0 || selectedTypes.includes(post.type);
 
-        return isYearInRange && isTypeMatch;
+        return isYearMatch && isTypeMatch;
     });
 
     return filteredPosts;
