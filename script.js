@@ -1,25 +1,24 @@
-let data;
+const originalData = []; // Stała tablica z oryginalnymi danymi
+let filteredData = []; // Tablica z przefiltrowanymi danymi
 
-
-//pobieranie danych generowanie postow - wywołanie funkcji po załadowaniu strony
+// Funkcja wywołująca się po załadowaniu strony
 document.addEventListener("DOMContentLoaded", function () {
-    // Pobierz dane z pliku JSON po załadowaniu strony
+    // Pobranie danych z pliku JSON
     fetch("data/database.json")
         .then(response => response.json())
         .then(responseData => {
-            data = responseData;
-            generatePosts(data); // Wywołaj funkcję do generowania postów
-            populateYearSelect(); // Wywołaj funkcję do wypełniania selecta z zakresami lat
+            originalData.push(...responseData); // Dodanie oryginalnych danych do stałej tablicy
+            filteredData = [...originalData]; // Inicjalizacja przefiltrowanej tablicy
+            generatePosts(filteredData); // Wygenerowanie postów na podstawie kopii oryginalnych danych
+            populateYearSelect();
         })
-        .catch(error => console.error("Error fetching data:", error));
+        .catch(error => console.error("Błąd podczas pobierania danych:", error));
 
-    // Obsługa filtrowania - dodaj event listener do przycisku
     const filterButton = document.querySelector(".filter-panel__button");
     filterButton.addEventListener("click", applyFilters);
 });
 
-
-//filtrowanie postów - pobiera wartości z inputów i checkboxów i przekazuje je do funkcji filterPosts
+// Funkcja aplikująca filtry na posty
 function applyFilters() {
     const selectedYear = document.getElementById("year").value;
     const sportCheckbox = document.getElementById("sport");
@@ -27,23 +26,21 @@ function applyFilters() {
     const muscleCheckbox = document.getElementById("muscle");
 
     const selectedTypes = [];
-    // Sprawdź czy checkboxy są zaznaczone i dodaj do tablicy zaznaczone typy
+    // Sprawdzenie, które checkboxy są zaznaczone i dodanie do tablicy zaznaczonych typów
     if (sportCheckbox.checked) selectedTypes.push(sportCheckbox.value);
     if (superCheckbox.checked) selectedTypes.push(superCheckbox.value);
     if (muscleCheckbox.checked) selectedTypes.push(muscleCheckbox.value);
 
-    // Zastosuj filtrowanie na danych
-    const filteredPosts = filterPosts(selectedYear, selectedTypes, data);
-
-    // Po zastosowaniu filtrowania, zaktualizuj generowane posty na stronie
-    updateFilteredPosts(filteredPosts);
+    // Zastosowanie filtrowania na danych
+    filteredData = filterPosts(selectedYear, selectedTypes, [...originalData]); // Utworzenie kopii oryginalnych danych
+    // Aktualizacja wyświetlanych postów po zastosowaniu filtrów
+    updateFilteredPosts(filteredData);
 }
 
-//wypełnianie selecta z zakresami lat
+// Funkcja wypełniająca selecta z zakresem lat
 function populateYearSelect() {
     const yearSelect = document.getElementById("year");
     let option = document.createElement("option");
-
 
     option.value = "1945-1949";
     option.innerHTML = "1945 - 1950";
@@ -63,7 +60,7 @@ function populateYearSelect() {
     yearSelect.appendChild(option);
 }
 
-//filtrowanie postów - przyjmuje zakres lat, tablicę z typami i tablicę z danymi
+// Funkcja filtrująca posty
 function filterPosts(selectedYear, selectedTypes, data) {
     const filteredPosts = data.filter(post => {
         const postYear = parseInt(post.year);
@@ -78,29 +75,28 @@ function filterPosts(selectedYear, selectedTypes, data) {
     return filteredPosts;
 }
 
-
-//aktualizacja postów - przyjmuje tablicę z danymi
+// Funkcja aktualizująca wyświetlane posty
 function updateFilteredPosts(filteredPosts) {
     const postsContainer = document.getElementById("posts-container");
 
-    // Usuń wszystkie posty z kontenera
+    // Usunięcie wszystkich postów z kontenera
     postsContainer.innerHTML = "";
 
-    // Ponownie wywołaj funkcję do generowania postów dla przefiltrowanych danych
+    // Ponowne wywołanie funkcji do generowania postów dla przefiltrowanych danych
     generatePosts(filteredPosts);
 }
 
-//generowanie postów - przyjmuje tablicę z danymi
+// Funkcja generująca posty
 function generatePosts(data) {
     const postsContainer = document.getElementById("posts-container");
 
-    // Sprawdź czy kontener na posty istnieje
+    // Sprawdzenie, czy kontener na posty istnieje
     if (!postsContainer) {
-        console.error("Error: Posts container not found");
+        console.error("Błąd: Kontener na posty nie został znaleziony");
         return;
     }
 
-    // Wygeneruj posty na podstawie danych - dla każdego obiektu w tablicy data
+    // Wygenerowanie postów na podstawie danych
     data.forEach((car, index) => {
         const article = document.createElement('article');
         article.classList.add('card');
@@ -128,20 +124,20 @@ function generatePosts(data) {
         article.appendChild(cardContent);
         article.appendChild(cardHover);
 
-        // Set the background image for the card
+        // Dodanie tła
         article.style.backgroundImage = `url(${car.img})`;
 
-        // Add the card to the posts container
+        // Dodanie karty do kontenera
         postsContainer.appendChild(article);
 
-        // Dodaj event listener dla otwierania okna popup
+        // Dodanie listenera dla otwierania okna popup
         article.addEventListener("click", function () {
-            openPopupWindow(index);
+            openPopupWindow(index, filteredData);
         });
     });
 }
 
-//generowanie przycisku zamykania popupa - zapobiega nadpisywaniu go podczas generowania popupa
+// Funkcja generująca przycisk zamykania popupa
 function generateCloseButton() {
     const popupContent = document.getElementById("popup-content");
 
@@ -153,8 +149,8 @@ function generateCloseButton() {
     popupContent.appendChild(closeButton);
 }
 
-//otwieranie popupa - przyjmuje index z tablicy data i na jego podstawie generuje popup
-function openPopupWindow(index) {
+// Funkcja otwierająca popup
+function openPopupWindow(index, data) {
     const overlay = document.getElementById("overlay");
     const popup = document.getElementById("popup");
     const popupContent = document.getElementById("popup-content");
@@ -189,10 +185,9 @@ function openPopupWindow(index) {
     popupDescription.classList.add("popup-content__description");
     popupDescription.innerHTML = carData.description;
 
-
     popupContent.innerHTML = "";
     popupContent.appendChild(popupTitle);
-    generateCloseButton();  //generowanie przycisku zamykania
+    generateCloseButton();  // Generowanie przycisku zamykania
     popupContent.appendChild(popupUppperContainer);
     popupContent.appendChild(popupDescription);
 
@@ -200,8 +195,7 @@ function openPopupWindow(index) {
     popup.style.display = "block";
 }
 
-
-//zamykanie popupa
+// Funkcja zamykająca popup
 function closePopupWindow() {
     const overlay = document.getElementById("overlay");
     const popup = document.getElementById("popup");
@@ -210,7 +204,7 @@ function closePopupWindow() {
     popup.style.display = "none";
 }
 
-// Funkcja do skracania tekstu niezbędna do poprawnego działania .card-hover
+// Funkcja do skracania tekstu
 function truncateText(text, maxLength) {
     if (text.length <= maxLength) {
         return text;
