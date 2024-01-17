@@ -1,0 +1,66 @@
+#carousel { 
+  background: rgba(0, 0, 0, 0.8) ;
+  display: flex;
+  overflow-x: auto;
+  margin: 0;
+  margin-top: 5vh;
+  width: 100%; /* Use 100% width to make it responsive */
+  height: fit-content;
+
+}
+
+#carousel::-webkit-scrollbar {
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+  min-width: 590px; 
+  margin: 15px;
+  text-align: center;
+  font-size: medium;
+  line-height: 50px;
+  border-radius: 7px;
+}
+
+.item img {
+  width: 590px;
+  height: 350px;
+  border-radius: 5px; 
+}
+/* Styl scrollbar dla przeglądarek opartych na Webkit (Chrome, Safari, itp.) */
+#carousel::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+#carousel::-webkit-scrollbar-thumb {
+    background-color: #424242; /* Kolor kciuka (thumb) */
+    border-radius: 6px;
+  }
+  
+ #carousel::-webkit-scrollbar-track {
+    background-color: #303030; /* Kolor tła ścieżki przewijania */
+  }
+  
+/* Styl scrollbar dla przeglądarek opartych na Firefox */
+#carousel {
+    scrollbar-color: #424242 #303030; /* Kolor thumb i tła ścieżki przewijania */
+    scrollbar-width: thin;
+}
+  
+/* Dodatkowy styl dla przeglądarek opartych na Firefox na systemie Windows */
+#carousel:dark {
+    scrollbar-color: #bdbdbd #303030; /* Kolor thumb i tła ścieżki przewijania w trybie ciemnym */
+  }
+  
+#carousel::-webkit-scrollbar-track:vertical {
+    background-color: #303030;
+  }
+  
+#carousel:dark::-webkit-scrollbar-thumb:vertical {
+    background-color: #bdbdbd;
+  }
+
+#carousel:dark::-webkit-scrollbar-track:vertical {
+    background-color: #303030;
+  }
+  
