@@ -170,12 +170,14 @@ function openPopupWindow(index, data) {
 
     const popupInfo = document.createElement("div");
     popupInfo.innerHTML = `
-        <p><b>Rok produkcji:</b> ${carData.year}</p>
-        <p><b>Typ:</b> ${carData.type}</p>
-        <p><b>Silnik:</b> ${carData.engine}</p>
-        <p><b>Moc silnika:</b> ${carData.horsePower}</p>
-        <p><b>0-100km/h:</b> ${carData.to100}</p>
-        <p><b>Predkosc maksymalna:</b> ${carData.vMax}</p>
+        <ul class="data-list">
+        <li><b>Rok produkcji: </b><span>${carData.year}</span></li>
+        <li><b>Typ: </b><span>${carData.type}</span></li>
+        <li><b>Silnik: </b><span>${carData.engine}</span></li>
+        <li><b>Moc silnika: </b><span>${carData.horsePower}</span></li>
+        <li><b>0-100km/h: </b><span>${carData.to100}</span></li>
+        <li><b>Predkosc maksymalna: </b><span>${carData.vMax}</span></li>
+        </ul>
     `;
 
     popupUppperContainer.appendChild(popupImage);

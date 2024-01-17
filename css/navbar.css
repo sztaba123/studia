@@ -23,17 +23,14 @@ nav {
     font-family: var(--font-family-primary);
 }
 
-.link__list__href__underline {
-    content: "";
-    width: 10px;
-    height: 3px;
-    margin-top: 5px;
-    border-radius: 5px;
-    background-color: var(--text-secondary);
-    transition: all 0.3s ease;
+nav .link__list {
+    width: 100%;
 }
 
-.link__list__href:hover ~ .link__list__href__underline {
-    background-color: var(--text-primary);
-    width: 50px;
+
+
+@media only screen and (max-width: 1000px) {
+    nav>.link__list>.link__list__item>.link__list__href__underline {
+        bottom: 10px;
+    }
 }

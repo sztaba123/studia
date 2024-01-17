@@ -38,12 +38,19 @@
 }
 
 .filter-panel__button {
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
     border-radius: 8px;
     color: black;
     border: none;
     cursor: pointer;
+    box-shadow: 0 5px 15px 1px rgba(255, 255, 255, 0.5);
+    transition: all ease-in-out 0.3s;
+}
+
+.filter-panel__button:hover {
+    box-shadow: 0 5px 25px 3px rgba(255, 255, 255, 0.5);
 }
 
 .checkbox-group {
@@ -69,11 +76,26 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 /* RWD */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+    .filter-panel__containter {
+        flex-direction: column;
+    }
+
+    .filter-panel__containter__filter {
+        margin-top: 25px;
+    }
+
+    .filter-panel__button {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .filter-panel {
         padding: 10px 0;
     }
@@ -82,61 +104,27 @@
         flex-direction: column;
     }
 
-    .filter-panel__select,
     .filter-panel__button {
-        width: 100%;
+        width: 60%;
         margin-top: 10px;
     }
 
     .posts-container {
-        width: 100%;
+        width: 80%;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* Dla urządzeń o szerokości ekranu mniejszej niż 600px */
-@media only screen and (max-width: 600px) {
-    .filter-panel {
-        padding: 10px 0;
-    }
-
-    .filter-panel__containter {
-        flex-direction: column;
-    }
-
-    .filter-panel__select,
-    .filter-panel__button {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .posts-container {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
 /* Dla urządzeń o szerokości ekranu między 601px a 900px */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-
-    .filter-panel__select,
-    .filter-panel__button {
-        width: 120px;
-    }
-
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
     .posts-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Dla urządzeń o szerokości ekranu większej niż 900px */
-@media only screen and (min-width: 901px) {
-
-    .filter-panel__select,
-    .filter-panel__button {
-        width: 150px;
-    }
-
+@media only screen and (min-width: 1001px) {
     .posts-container {
         grid-template-columns: repeat(3, 1fr);
     }

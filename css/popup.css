@@ -54,6 +54,14 @@
     text-align: justify;
 }
 
+.data-list {
+    list-style-type: disc;
+}
+
+.data-list li span {
+    color: rgb(161, 161, 0);
+}
+
 #close-popup {
     position: absolute;
     font-size: 32px;
@@ -62,5 +70,4 @@
     cursor: pointer;
     color: white;
     z-index: 3;
-    /* Dodany z-index, aby sprawdzić, czy ma wpływ na wyświetlanie */
 }
