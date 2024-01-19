@@ -52,7 +52,7 @@ body {
 }
 
 #photo {
-    background: url("../src/test1.jpg");
+    background: url("../src/background.jpg");
     background-size: cover;
     width: 100%;
     height: 100vh;

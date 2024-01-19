@@ -4,13 +4,13 @@
   overflow-x: auto;
   margin: 0;
   margin-top: 5vh;
-  width: 100%; /* Use 100% width to make it responsive */
+  width: 100%;
   height: fit-content;
 
 }
 
 #carousel::-webkit-scrollbar {
-  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  -webkit-overflow-scrolling: touch;
 }
 
 .item {
