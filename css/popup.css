@@ -22,6 +22,7 @@
     color: white;
     border-radius: 10px;
     z-index: 2;
+    overflow-y: scroll;
 }
 
 .popup-content__title {

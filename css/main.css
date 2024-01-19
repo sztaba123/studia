@@ -12,7 +12,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    font-family: var(--font-family-primmary);
+    scroll-behavior: smooth;
+    position: relative;
 }
 
 #banner {
@@ -67,6 +68,7 @@ body {
     top: 0;
     left: 0;
 }
+
 .welcome { 
     text-align: center; 
     color: var(--text-primary);
@@ -75,11 +77,10 @@ body {
     margin-top: 50px;
     padding: 0;
 }
+
 .main__text {
     text-align: center; 
     color: var(--text-primary);
     font-size: 24px;
-    margin: 0;
-    margin-top: 100px;
-    padding: 0;
+    padding: 150px 0;
 }
